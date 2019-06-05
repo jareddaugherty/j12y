@@ -13,6 +13,7 @@ div[class*=div]{
 
 .intro {
     margin: 2rem;
+    text-align: center;
     font-family: 'Special Elite', cursive;
     font-size: 2rem;
     background-image: none;
@@ -23,13 +24,17 @@ div[class*=div]{
     height: 100%;
     display: grid;
 
-    grid-template-columns: 15fr 1fr 10fr 1fr 6fr 1fr;
-
+    grid-template-columns: 15fr 1fr 3fr 1fr 6fr 1fr;
     grid-template-rows: 3fr 1fr 5fr 1fr 50fr 1fr;
 
     grid-column-gap: 0px;
-
     grid-row-gap: 0px;
+}
+
+@media(max-width: 500px){
+    .parent {
+        grid-template-columns: 15fr 1fr 8fr 1fr 6fr 1fr; 
+    }
 }
 
 .posts {
