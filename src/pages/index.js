@@ -7,20 +7,6 @@ const IndexPage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}></div>
-            <div className={styles.panel}>
-                <div className={styles.nav}>
-                    <div className={styles.title}>/ j12y /</div>
-                    <div className={styles.item}>
-                        <Link to='/blog'>blog</Link>
-                    </div>
-                    <div className={styles.item}>
-                        <Link to='/sketchpad'>sketchpad</Link>
-                    </div>
-                    <div className={styles.item}>
-                        <Link to='/contact'>about</Link>
-                    </div>
-                </div>
-            </div>
             <div className={styles.parent}>
                 <div 
                     className={styles.div1} 
@@ -46,6 +32,19 @@ const IndexPage = () => {
                 <div className={styles.div12}></div>
                 <div className={styles.div13}></div>
                 <div className={styles.div14}></div>
+            </div>
+
+            <div className={styles.nav}>
+                <div className={styles.title}>/ j12y /</div>
+                <div className={styles.item}>
+                    <Link to='/blog'>blog</Link>
+                </div>
+                <div className={styles.item}>
+                    <Link to='/sketchpad'>sketchpad</Link>
+                </div>
+                <div className={styles.item}>
+                    <Link to='/contact'>about</Link>
+                </div>
             </div>
         </div>
     )

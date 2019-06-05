@@ -3,9 +3,10 @@
 .texture {
   background-image: url(../assets/wallpaper.png);
 }
+
 a {
     text-decoration: none;
-    color: #004590;
+    color: black;;
 }
 .container {
     width: 100%;
@@ -14,26 +15,24 @@ a {
     top: 0;
     left: 0;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     background-image: url(../assets/wallpaper.png);
 }
 
 .title {
   text-align: center;
-  background-image: none;
-}
-
-.panel {
-  height: 85vmin;
-  width: 35vmax;
-  border: 2px solid #ECEFE8;
-  margin: 1rem 0 2rem 5rem;
+  margin: 2rem 0 0 0;
+  flex-basis: 100%;
 }
 
 .nav {
-  margin: 4rem;
-  padding: 1rem 0;
-  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  order: 2;
+  font-size: 1.5rem;
   font-family: 'Special Elite', cursive;
 }
 
@@ -43,29 +42,22 @@ a {
 
 .item:hover {
   cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 200ms ease-in;
  }
 
-.red:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
-}
-
-
-.blue:hover {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
-}
-
-.yellow:hover {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.05);
-}
 
 .item:hover span{
   opacity: 1;    
 }
-
+.parent div {
+    background-image: url(../assets/wallpaper.png);
+}
 .parent {
-  width: 85vmin;
-  height: 85vmin;
-  margin: 1rem auto;
+  order: 1;
+  margin-top: 0rem;
+  width: 75vmin;
+  height: 75vmin;
   display: grid;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   
@@ -76,45 +68,18 @@ a {
   grid-row-gap: 0px;
 }
 
-@media(max-width: 1116px) {
-  .parent {
-    order: 1;
-    margin-top: 5rem;
-  }
-  
-  .panel {
-    order: 2;
-  }
-  
-  .title {
-    order: 1;
-    width: 100%;
-    font-size: 4rem;
-  }
-  
-  .nav {
-    background-image: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    margin: 5rem;
-    padding: 0;
-  }
-  
-  .item {
-    background-image: none;
-    margin: 1rem;
-    order: 2;
-    font-size: 4rem;
-  }
-  
-  .panel {
-    background-image: none;
-    width: 100vmin;
-    border: 2px solid #ECEFE8;
-    margin: 0;
-  }
+@media(max-width:500px) {
+    .nav {
+        font-size: 1rem;
+    }
+
+    .parent {
+        width: 90vmin;
+        height: 90vmin;
+    }
 }
+
+
 
 .div1 {
   background-color: #e32d1f;
@@ -124,6 +89,7 @@ a {
 .div1:hover {
   cursor: pointer;
   opacity: 0.9;
+  transition: opacity 200ms ease-in;
 }
 
 .div2 {
@@ -148,6 +114,7 @@ a {
 .div5:hover {
   opacity: .9;
   cursor: pointer;
+  transition: opacity 200ms ease-in;
 }
 
 .div14 {
@@ -169,6 +136,7 @@ a {
 .div7:hover {
   opacity: 0.8;
   cursor: pointer;
+  transition: opacity 200ms ease-in;
 }
 
 .div8 {
