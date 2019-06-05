@@ -11,9 +11,6 @@ const Blog = () => {
             <div className={styles.div3}></div>
             <div className={styles.div4}>
                 <div className={styles.posts}>
-                    <div className={styles.post}>post 1</div>
-                    <div className={styles.post}>post 2</div>
-                    <div className={styles.post}>post 3</div>
                 </div>
             </div>
             <div className={styles.div5}></div>
