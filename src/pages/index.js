@@ -6,7 +6,6 @@ import styles from '../styles/index.module.scss'
 const IndexPage = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.header}></div>
             <div className={styles.parent}>
                 <div 
                     className={styles.div1} 
