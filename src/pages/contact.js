@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../styles/contact.module.scss'
-import BackButton from '../components/backButton'
 
 const ContactPage = () => {
     return (
