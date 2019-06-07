@@ -1,62 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
-
 $piet-black: #1B1C22;
 $piet-red: #e32d1f;
 $offwhite: #EFF0EB;
 $piet-yellow: #FBD21A;
 $piet-blue: #004590;
 
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.container {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../assets/wallpaper.png);
-}
-
-.title {
-  text-align: center;
-  margin: 2rem 0 0 0;
-  flex-basis: 100%;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  order: 2;
-  font-size: 1.5rem;
-  font-family: 'Special Elite', cursive;
-}
-
-.item {
-  margin: 1rem;
-}
-
-.item:hover {
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 100ms ease-in;
- }
-
-
-.item:hover span{
-  opacity: 1;    
-}
-.parent div {
-    background-image: url(../assets/wallpaper.png);
-}
 .parent {
   order: 1;
   margin-top: 0rem;
@@ -72,16 +19,6 @@ a {
   grid-row-gap: 0px;
 }
 
-@media(max-width:500px) {
-    .nav {
-        font-size: 1rem;
-    }
-
-    .parent {
-        width: 90vmin;
-        height: 90vmin;
-    }
-}
 
 .div1 {
   background-color: $piet-red;
