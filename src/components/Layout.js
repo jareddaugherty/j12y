@@ -10,7 +10,7 @@ const Layout = (props) => {
             </div>
             <div className={styles.nav}>
                 <div className={styles.title}>
-                    <Link to="/">/ j12y /</Link>
+                    <Link to="/">/ jared daugherty /</Link>
                 </div>
                 <div className={styles.item}>
                     <Link to='/blog'>blog</Link>
