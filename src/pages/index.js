@@ -3,9 +3,9 @@ import { navigate } from 'gatsby'
 import Layout from '../components/Layout.js'
 import styles from '../styles/index.module.scss'
 
-const IndexPage = () => {
+const IndexPage = (props) => {
     return (
-        <Layout>
+        <Layout location={props.location}>
             <div className={styles.parent}>
             <div 
                 className={styles.div1} 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout.js'
 import styles from '../styles/sketch.module.scss'
-const Sketchpad = () => {
+const Sketchpad = (props) => {
     return (
-        <Layout>
+        <Layout location={props.location}>
             <div className={styles.parent}>
                 <div  className={styles.div1}>
                 </div>

@@ -3,9 +3,9 @@ import Layout from '../components/Layout.js'
 import styles from '../styles/blog.module.scss'
 
 
-const Blog = () => {
+const Blog = (props) => {
     return (
-        <Layout>
+        <Layout location={props.location}>
             <div className={styles.parent}>
             <div  className={styles.div1}></div>
             <div className={styles.div2}></div>
