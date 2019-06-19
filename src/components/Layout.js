@@ -1,13 +1,22 @@
 import React from 'react'
-import { navigate, Link } from 'gatsby'
+import { navigate, Link, graphql, useStaticQuery } from 'gatsby'
 import classnames from 'classnames'
 import styles from '../styles/layout.module.scss'
 import { useKeyPress } from '../hooks/onKeyPress.js'
 
 const Layout = (props) => {
     const { location: { pathname }} = props 
-    
-    const paths = [{ path: '/', title: '/ jared daugherty /' }, 
+
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+    const paths = [{ path: '/', title: data.site.siteMetadata.title}, 
                    { path: '/blog', title: 'blog' }, 
                    { path: '/sketchpad', title: 'sketchpad' }, 
                    { path: '/contact', title: 'about' }]

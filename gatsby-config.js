@@ -5,8 +5,20 @@
  */
 
 module.exports = {
+    siteMetadata: {
+        title: '/ jared daugherty /',
+        author: 'Jared Daugherty'
+    },
     plugins: [
-        'gatsby-plugin-sass'
+        'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'blog',
+                path: `${__dirname}/content/blog`
+            }
+        },
+        'gatsby-transformer-remark'
     ]
 }
 
